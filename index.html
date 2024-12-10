@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kéwan</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <div class="flex flex-col min-h-[100dvh]">
+      <header class="h-14 flex items-center">
+
+        <a
+          class="relative flex items-center justify-center group gap-2"
+          href="#header"
+          style="width: fit-content; margin: 10px"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 transition-transform duration-500 transform  group-hover:translate-x-[3.75rem]"
+            style="margin-right: 3.25rem;"
+            >
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+
+          <span
+            class="absolute inset-0 flex items-center justify-center text-lg font-medium opacity-100 whitespace-nowrap transition-opacity duration-500 group-hover:opacity-0"
+          >
+            Kéwan Bernier
+          </span>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 transition-transform duration-500 transform  group-hover:-translate-x-[3.75rem]"
+            style="margin-left: 3.25rem;"
+
+            >
+            <polyline points="16 18 22 12 16 6"></polyline>
+          </svg>
+        </a> 
+
+        <nav class="ml-auto flex gap-4 sm:gap-6">
+          <a
+            href="#about"
+            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+          >
+            À propos
+          </a>
+          <a
+            href="#projets"
+            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+          >
+            Projets
+          </a>
+          <a
+            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+            href="#skills"
+          >
+            Compétences
+          </a>
+          <a
+            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+            href="#CV"
+          >
+            CV
+          </a>
+          <a
+            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+            href="#CV"
+          >
+            Blog
+          </a>
+          <a
+            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+            href="#contact"
+          >
+            Contact
+          </a>
+        </nav>
+      </header>
+
+      <main class="flex-1">
+        <section class="w-full py-12 md:py-24 lg:py-32" id="header">
+          <div class="container px-4 md:px-6">
+            <div
+              class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]"
+            >
+              <div class="flex flex-col justify-center space-y-4">
+                <div class="space-y-2">
+                  <h1
+                    class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                  >
+                    Kéwan B
+                  </h1>
+                  <p class="max-w-[600px] text-muted-foreground md:text-xl">                  </p>
+                </div>
+                <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                  <a
+                    class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    href="#project"
+                  >
+                    Mes projets
+                  </a>
+
+                  
+                </div>
+              </div>
+              <img
+                  src="./src/img/me.png"
+                  width="550"
+                  height="550"
+                  alt="Hero"
+                  class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+                />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
