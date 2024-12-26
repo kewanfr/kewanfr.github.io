@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/output.css" />
 
-    <link href="./src/vendor/aos/aos.css" rel="stylesheet">
+    <link href="./src/vendor/aos/aos.css" rel="stylesheet" />
     <script src="./src/vendor/aos/aos.js"></script>
-
   </head>
   <body>
     <script>
@@ -28,7 +27,6 @@
           class="relative flex items-center justify-center group gap-2"
           href="#header"
           style="width: fit-content; margin: 10px"
-          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -137,17 +135,21 @@
         </nav>
       </div>
 
+      <main class="container mx-auto px-4 py-24 flex-1" data-aos="fade-up">
+        <section
+          class="h-[100vh] w-full py-12 md:py-24 lg:py-32 align-middle pr-0"
+          id="about"
+        >
           <div class="container px-4 md:px-6">
-
             <!-- src="./src/img/placeholder.svg" -->
             <!-- src="./src/img/placeholder.svg" -->
             <img
-            src="./src/img/me.png"
-                  width="400"
-                  height="400"
-                  alt="Hero"
-                  class=" aspect-square mb-6 overflow-hidden w-52 rounded-xl object-cover lg:order-last"
-                />
+              src="./src/img/me.png"
+              width="400"
+              height="400"
+              alt="Hero"
+              class="aspect-square mb-6 overflow-hidden w-52 rounded-xl object-cover lg:order-last"
+            />
             <div
               class="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[2fr_500px]"
             >
@@ -161,72 +163,86 @@
                   <h3 class="text-2xl text-muted-backgroud">
                     Étudiant & Développeur full-stack
                   </h3>
-                  <br>
+                  <br />
                   <p class="max-w-[600px] text-muted-backgroud md:text-xl">
-                   
-                    Actuellement étudiant en BUT informatique à l'IUT de Nantes, j'ai toujours été passionné par l'informatique et l'électronique depuis petit. <br /><br />
+                    Actuellement étudiant en BUT informatique à l'IUT de
+                    Nantes, j'ai toujours été passionné par l'informatique et
+                    l'électronique depuis petit. <br /><br />
 
-                    Mais j'ai commencé à apprendre la programmation et l'électronique il y a près de 8 ans, en apprenant l'Arduino en 2016. <br /><br />
+                    Mais j'ai commencé à apprendre la programmation et
+                    l'électronique il y a près de 8 ans, en apprenant l'Arduino
+                    en 2016. <br /><br />
 
-                    Depuis lors, je n'ai jamais arrêté d'apprendre et j'apprécie découvrir de nouvelles technologies. <br />
-
+                    Depuis lors, je n'ai jamais arrêté d'apprendre et
+                    j'apprécie découvrir de nouvelles technologies. <br />
                   </p>
                 </div>
                 <div class="flex flex-col gap-2 min-[400px]:flex-row">
                   <a
-                    class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    href="#project"
+                    class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors relative overflow-hidden group"
+                    href="#projets"
                   >
-                    Mes projets
+                    <span
+                      class="absolute inset-0 bg-secondary transform -skew-x-12 scale-150 transition-transform duration-500 ease-in-out group-hover:translate-x-full"
+                    ></span>
+                    <span class="relative z-10">Voir mes projets</span>
                   </a>
-
-                  
                 </div>
               </div>
 
               <div class="flex items">
-
                 <!-- En résumé -->
                 <div class="flex flex-col gap-4 mr-8">
                   <div class="flex flex-col gap-4">
-                    <h2 class="text-3xl font-bold">En résumé</h2>
                     <ul class="list-item pl-5 space-y-2">
-                      
-                      <!-- Age : 17 ans.. -->
                       <li>
-                        <span class="font-semibold underline">🎂</span> - 17 ans
+                        <span class="font-semibold underline">🎂</span> - 17
+                        ans
+                      </li>
+
+                      <li><span class="font-semibold">📍</span> - Nantes</li>
+
+                      <li>
+                        <span class="font-semibold">🎓</span> - BUT
+                        informatique à l'IUT de Nantes
                       </li>
 
                       <li>
-                        <span class="font-semibold">📍</span> - Nantes
+                        <span class="font-semibold">💻</span> - Passionné par
+                        l'informatique et l'électronique depuis petit
                       </li>
 
-                      <!-- Études : BUT informatique à l'IUT de Nantes -->
                       <li>
-                        <span class="font-semibold">🎓</span> - BUT informatique à l'IUT de Nantes
+                        <span class="font-semibold">🚀</span> - 8 ans
+                        d'expérience en programmation et en informatique
                       </li>
-
-                      <!-- Passionné par l'informatique et l'électronique depuis petit -->
-                      <li>
-                        <span class="font-semibold">💻</span> - Passionné par l'informatique et l'électronique depuis petit
-                      </li>
-
-                      <!-- 8 ans d'expérience en programmation et en informatique -->
-                      <li>
-                        <span class="font-semibold">🚀</span> - 8 ans d'expérience en programmation et en informatique
-                      </li>
-
-
-
                     </ul>
                   </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        
-      </main>
 
+        <section
+          class="h-[100vh] w-full py-12 md:py-24 lg:py-32 align-middle pr-0"
+          id="projets"
+        >
+        
+          <div class="container px-4 md:px-6">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+              Mes projets
+            </h2>
+            <div class="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[2fr_500px]">
+
+
+            </div>
+            </div>
+      </section>
+      </main>
     </div>
+
+    <script src="./src/js/script.js"></script>
+
   </body>
 </html>
