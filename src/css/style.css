@@ -12,3 +12,89 @@ body {
 a.group:hover span.bg-secondary {
   transform: translateX(-100%) skewX(-12deg);
 }
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 200px;
+  width: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project-card:hover img {
+  filter: brightness(85%); /* Assombrissement diffus */
+}
+
+/* Conteneur principal des infos */
+.project-card .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Infos visibles en permanence */
+.project-card .info {
+  z-index: 2;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card .info h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Lisibilité */
+}
+
+.project-card .info .tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.project-card .info .tags span {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+/* Description initialement masquée */
+.project-card .description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Survol de la carte */
+.project-card:hover .info {
+  transform: translateY(-20px); /* Fait monter les infos */
+}
+
+.project-card .info .date {
+  font-size: 0.85rem; /* Augmente légèrement la taille */
+  font-weight: bold; /* Met la date en gras */
+  color: rgba(255, 255, 255, 0.9); /* Texte blanc avec opacité pour contraste */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Ajoute un contour sombre pour lisibilité */
+  margin-bottom: 5px; /* Ajoute un espace sous la date */
+}
+
+.project-card:hover .description {
+  opacity: 1; /* Fait apparaître la description */
+  transform: translateY(0); /* Fluide */
+}
