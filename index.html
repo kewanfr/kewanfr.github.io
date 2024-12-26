@@ -15,12 +15,15 @@
       AOS.init();
     </script>
     <style>
-      html { scroll-behavior: smooth; }
-
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
-    <div class="flex flex-col">
-      <header class="h-14 flex items-center sticky top-0 z-10 bg-background shadow-md">
-
+    <div class="min-h-screen bg-background text-foreground overflow-hidden">
+      <!-- class="h-14 flex items-center sticky top-0 z-10 p-4 justify-between bg-background shadow-md" -->
+      <header
+        class="flex h-14 items-center justify-between shadow-md fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm"
+      >
         <a
           class="relative flex items-center justify-center group gap-2"
           href="#header"
@@ -37,9 +40,9 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="h-6 w-6 transition-transform duration-500 transform  group-hover:translate-x-[3.75rem]"
-            style="margin-right: 3.25rem;"
-            >
+            class="h-6 w-6 transition-transform duration-500 transform group-hover:translate-x-[3.75rem]"
+            style="margin-right: 3.25rem"
+          >
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
 
@@ -59,18 +62,15 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="h-6 w-6 transition-transform duration-500 transform  group-hover:-translate-x-[3.75rem]"
-            style="margin-left: 3.25rem;"
-
-            >
-
+            class="h-6 w-6 transition-transform duration-500 transform group-hover:-translate-x-[3.75rem]"
+            style="margin-left: 3.25rem"
+          >
             <polyline points="7,18 12,5" />
             <polyline points="16 18 22 12 16 6"></polyline>
           </svg>
+        </a>
 
-        </a> 
-
-        <nav class="ml-auto flex gap-4 sm:gap-6">
+        <nav class=" gap-4 sm:gap-6 md:flex hidden">
           <a
             href="#about"
             class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
@@ -108,10 +108,35 @@
             Contact
           </a>
         </nav>
+        <button id="menu-btn" class="md:hidden text-lg font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" id="menu-burger-icon" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" id="menu-close-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+
+        </button>
       </header>
 
-      <main class="container flex-1" data-aos="fade-up">
-        <section class="h-[100vh] w-full py-12 md:py-24 lg:py-32 align-middle pr-0" id="about">
+      <!-- <nav id="mobile-nav" class="hidden md:hidden flex-col gap-4 p-4 bg-primary text-primary-foreground">
+        <a href="#about" class="text-lg font-medium">À propos</a>
+        <a href="#projets" class="text-lg font-medium">Projets</a>
+        <a href="#skills" class="text-lg font-medium">Compétences</a>
+        <a href="#CV" class="text-lg font-medium">CV</a>
+      </nav> -->
+
+      <div id="mobile-nav" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-sm flex items-center justify-center md:hidden">
+        <nav class="flex flex-col space-y-4 text-center">
+          <a href="#about" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">À propos</a>
+          <a href="#skills" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">Compétences</a>
+          <a href="#projects" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">Projets</a>
+          <a href="#contact" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">Contact</a>
+        </nav>
+      </div>
+
           <div class="container px-4 md:px-6">
 
             <!-- src="./src/img/placeholder.svg" -->

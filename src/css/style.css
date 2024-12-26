@@ -9,6 +9,6 @@ body {
 }
 
   
-a.group:hover span.bg-white {
+a.group:hover span.bg-secondary {
   transform: translateX(-100%) skewX(-12deg);
 }
