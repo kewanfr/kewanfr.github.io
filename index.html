@@ -3,62 +3,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kéwan</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/output.css" />
+
+    <link href="./src/vendor/aos/aos.css" rel="stylesheet">
+    <script src="./src/vendor/aos/aos.js"></script>
+
   </head>
   <body>
-    <div class="flex flex-col min-h-[100dvh]">
-      <header class="h-14 flex items-center">
+    <script>
+      AOS.init();
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
 
-        <!-- < Kéwan Bernier > -->
-<!-- 
-        <a
-        class="relative flex items-center justify-center group gap-2"
-        href="#header"
-        style="width: fit-content; margin: 5vw"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="h-6 w-6 mr-28"
-          >
-          <polyline points="8 6 2 12 8 18"></polyline>
-        </svg>
-
-        <span
-          class="absolute inset-0 flex items-center justify-center text-lg font-medium whitespace-nowrap"
-        >
-          Kéwan Bernier
-        </span>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="h-6 w-6"
-
-          >
-          <polyline points="16 18 22 12 16 6"></polyline>
-        </svg>
-      </a> -->
-
+    </style>
+    <div class="flex flex-col">
+      <header class="h-14 flex items-center sticky top-0 z-10 bg-background shadow-md">
 
         <a
           class="relative flex items-center justify-center group gap-2"
           href="#header"
           style="width: fit-content; margin: 10px"
+          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -126,13 +93,13 @@
             class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
             href="#CV"
           >
-            CV
+            Blog
           </a>
           <a
             class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
             href="#CV"
           >
-            Blog
+            CV
           </a>
           <a
             class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
@@ -143,20 +110,21 @@
         </nav>
       </header>
 
-      <main class="flex-1">
-        <section class="w-full py-12 md:py-24 lg:py-32" id="header">
+      <main class="container flex-1" data-aos="fade-up">
+        <section class="h-[100vh] w-full py-12 md:py-24 lg:py-32 align-middle pr-0" id="about">
           <div class="container px-4 md:px-6">
 
-              <!-- src="./src/img/me.png" -->
-              <img
-                  src="./src/img/placeholder.svg"
+            <!-- src="./src/img/placeholder.svg" -->
+            <!-- src="./src/img/placeholder.svg" -->
+            <img
+            src="./src/img/me.png"
                   width="400"
                   height="400"
                   alt="Hero"
                   class=" aspect-square mb-6 overflow-hidden w-52 rounded-xl object-cover lg:order-last"
                 />
             <div
-              class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]"
+              class="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[2fr_500px]"
             >
               <div class="flex flex-col justify-center space-y-4">
                 <div class="space-y-2">
@@ -165,17 +133,18 @@
                   >
                     Kéwan Bernier
                   </h1>
-                  <p class="max-w-[600px] text-muted-foreground md:text-xl">
-                    <!-- Actuellement étudiant en BUT informatique, j'ai toujours
-                    été passionné par la programmation et l'informatique.
-                    <br />
-                    <br />
-                    J'ai maintenant + de 8 ans d'expérience en programmation et
-                    en informatique, ce qui m'a permis de découvrir de nombreux
-                    langages et de nombreuses technologies.
-                    <br />
-                    <br />
-                    Découvrez mes projets et mes compétences ci-dessous. -->
+                  <h3 class="text-2xl text-muted-backgroud">
+                    Étudiant & Développeur full-stack
+                  </h3>
+                  <br>
+                  <p class="max-w-[600px] text-muted-backgroud md:text-xl">
+                   
+                    Actuellement étudiant en BUT informatique à l'IUT de Nantes, j'ai toujours été passionné par l'informatique et l'électronique depuis petit. <br /><br />
+
+                    Mais j'ai commencé à apprendre la programmation et l'électronique il y a près de 8 ans, en apprenant l'Arduino en 2016. <br /><br />
+
+                    Depuis lors, je n'ai jamais arrêté d'apprendre et j'apprécie découvrir de nouvelles technologies. <br />
+
                   </p>
                 </div>
                 <div class="flex flex-col gap-2 min-[400px]:flex-row">
@@ -189,10 +158,50 @@
                   
                 </div>
               </div>
+
+              <div class="flex items">
+
+                <!-- En résumé -->
+                <div class="flex flex-col gap-4 mr-8">
+                  <div class="flex flex-col gap-4">
+                    <h2 class="text-3xl font-bold">En résumé</h2>
+                    <ul class="list-item pl-5 space-y-2">
+                      
+                      <!-- Age : 17 ans.. -->
+                      <li>
+                        <span class="font-semibold underline">🎂</span> - 17 ans
+                      </li>
+
+                      <li>
+                        <span class="font-semibold">📍</span> - Nantes
+                      </li>
+
+                      <!-- Études : BUT informatique à l'IUT de Nantes -->
+                      <li>
+                        <span class="font-semibold">🎓</span> - BUT informatique à l'IUT de Nantes
+                      </li>
+
+                      <!-- Passionné par l'informatique et l'électronique depuis petit -->
+                      <li>
+                        <span class="font-semibold">💻</span> - Passionné par l'informatique et l'électronique depuis petit
+                      </li>
+
+                      <!-- 8 ans d'expérience en programmation et en informatique -->
+                      <li>
+                        <span class="font-semibold">🚀</span> - 8 ans d'expérience en programmation et en informatique
+                      </li>
+
+
+
+                    </ul>
+                  </div>
+              </div>
             </div>
           </div>
         </section>
+        
       </main>
+
     </div>
   </body>
 </html>
