@@ -660,6 +660,10 @@ h1, h2, h3, h4, h5, h6 {
   right: 0px;
 }
 
+.-left-3 {
+  left: -0.75rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -723,6 +727,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .flex {
@@ -889,6 +913,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -907,6 +937,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .rounded-lg {
   border-radius: var(--radius);
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .bg-background {
@@ -1046,6 +1084,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
 .tracking-tighter {
   letter-spacing: -0.05em;
 }
@@ -1101,6 +1147,10 @@ h1, h2, h3, h4, h5, h6 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-primary {
+  color: hsl(var(--primary));
 }
 
 .text-opacity-60 {
@@ -1327,6 +1377,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:bg-primary {
   background-color: hsl(var(--primary));
 }
@@ -1408,6 +1464,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-\[2fr_1fr\] {
+    grid-template-columns: 2fr 1fr;
   }
 
   .lg\:gap-12 {
