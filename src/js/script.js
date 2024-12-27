@@ -100,11 +100,11 @@ const projects = [
 ];
 
 let visibleProjects = 3; // Nombre de projets visibles au début
-const container = document.getElementById("projects-container");
+const projectsContainer = document.getElementById("projects-container");
 const loadMoreBtn = document.getElementById("load-more");
 
 function displayProjects() {
-  container.innerHTML = ""; // Réinitialise le conteneur
+  projectsContainer.innerHTML = ""; // Réinitialise le conteneur
   projects.slice(0, visibleProjects).forEach((project) => {
     const card = `
       <a href="${project.link}" class="project-card">
@@ -123,7 +123,7 @@ function displayProjects() {
         </div>
       </a>
     `;
-    container.innerHTML += card;
+    projectsContainer.innerHTML += card;
   });
 }
 
@@ -138,3 +138,26 @@ loadMoreBtn.addEventListener("click", () => {
 
 // Charge les projets au début
 displayProjects();
+
+
+const skills = [
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+  { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  // Ajoute d'autres compétences ici
+];
+
+const container = document.querySelector("#skills .grid");
+
+// skills.forEach((skill) => {
+//   const badge = `
+//     <div class="skill-badge">
+//       <img src="${skill.icon}" alt="${skill.name}" />
+//       <div class="overlay">
+//         <span>${skill.name}</span>
+//       </div>
+//     </div>
+//   `;
+//   container.innerHTML += badge;
+// });

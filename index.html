@@ -68,7 +68,7 @@
           </svg>
         </a>
 
-        <nav class=" gap-4 sm:gap-6 md:flex hidden">
+        <nav class="gap-4 sm:gap-6 md:flex hidden">
           <a
             href="#about"
             class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
@@ -107,15 +107,37 @@
           </a>
         </nav>
         <button id="menu-btn" class="md:hidden text-lg font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" id="menu-burger-icon" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            id="menu-burger-icon"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
           </svg>
 
-
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" id="menu-close-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 hidden"
+            id="menu-close-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
-
         </button>
       </header>
 
@@ -126,12 +148,35 @@
         <a href="#CV" class="text-lg font-medium">CV</a>
       </nav> -->
 
-      <div id="mobile-nav" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-sm flex items-center justify-center hidden">
+      <div
+        id="mobile-nav"
+        class="fixed inset-0 z-40 bg-background/95 backdrop-blur-sm flex items-center justify-center hidden"
+      >
         <nav class="flex flex-col space-y-4 text-center">
-          <a href="#about" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">À propos</a>
-          <a href="#skills" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">Compétences</a>
-          <a href="#projets" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">Projets</a>
-          <a href="#contact" class="text-muted-foreground hover:text-primary transition-colors duration-300" onclick="closeMenu()">Contact</a>
+          <a
+            href="#about"
+            class="text-muted-foreground hover:text-primary transition-colors duration-300"
+            onclick="closeMenu()"
+            >À propos</a
+          >
+          <a
+            href="#skills"
+            class="text-muted-foreground hover:text-primary transition-colors duration-300"
+            onclick="closeMenu()"
+            >Compétences</a
+          >
+          <a
+            href="#projets"
+            class="text-muted-foreground hover:text-primary transition-colors duration-300"
+            onclick="closeMenu()"
+            >Projets</a
+          >
+          <a
+            href="#contact"
+            class="text-muted-foreground hover:text-primary transition-colors duration-300"
+            onclick="closeMenu()"
+            >Contact</a
+          >
         </nav>
       </div>
 
@@ -155,9 +200,7 @@
             >
               <div class="flex flex-col justify-center space-y-4">
                 <div class="space-y-2">
-                  <h1
-                    class="text-3xl font-bold  sm:text-5xl xl:text-6xl/none"
-                  >
+                  <h1 class="text-3xl font-bold sm:text-5xl xl:text-6xl/none">
                     Kéwan Bernier
                   </h1>
                   <h3 class="text-2xl text-muted-backgroud">
@@ -168,7 +211,7 @@
                     Actuellement étudiant en BUT informatique à l'IUT de
                     Nantes, j'ai toujours été passionné par l'informatique et
                     l'électronique depuis petit. <br /><br />
-
+                    
                     Mais j'ai commencé à apprendre la programmation et
                     l'électronique il y a près de 8 ans, en apprenant l'Arduino
                     en 2016. <br /><br />
@@ -186,6 +229,16 @@
                       class="absolute inset-0 bg-secondary transform -skew-x-12 scale-150 transition-transform duration-500 ease-in-out group-hover:translate-x-full"
                     ></span>
                     <span class="relative z-10">Voir mes projets</span>
+                  </a>
+
+                  <a
+                    class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors relative overflow-hidden group"
+                    href="#cv"
+                  >
+                    <span
+                      class="absolute inset-0 bg-secondary transform -skew-x-12 scale-150 transition-transform duration-500 ease-in-out group-hover:translate-x-full"
+                    ></span>
+                    <span class="relative z-10">Mon CV</span>
                   </a>
                 </div>
               </div>
@@ -218,45 +271,140 @@
                       </li>
                     </ul>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
           </div>
         </section>
         <section
-  class="h-[100vh] w-full py-12 md:py-24 lg:py-32 align-middle pr-0"
-  id="projets"
->
-  <div class="px-4 md:px-6">
-    <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8">
-      Mes projets
-    </h2>
-    <div
-      id="projects-container"
-      class="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
-    >
-      <!-- Les cartes seront injectées ici -->
-    </div>
-    <div class="mt-8 text-center">
-      <button
-        id="load-more"
-        class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-300"
-      >
-        Charger plus de projets
-      </button>
-    </div>
-  </div>
-</section>
+          class="h-[100vh] w-full py-12 md:py-24 lg:py-32 align-middle pr-0"
+          id="projets"
+        >
+          <div class="px-4 md:px-6">
+            <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8">
+              Mes projets
+            </h2>
+            <div
+              id="projects-container"
+              class="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+            >
+              <!-- Les cartes seront injectées ici -->
+            </div>
+            <div class="mt-8 text-center">
+              <button
+                id="load-more"
+                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-300"
+              >
+                Charger plus de projets
+              </button>
+            </div>
+          </div>
+        </section>
 
-      
-      
+        <section id="skills" class="h-[100vh] w-full  py-12 md:py-24 lg:py-32 mt-10 animate-fadeIn scroll-mt-14">
+          <div class="px-4 md:px-6">
+            <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+              Mes compétences
+            </h2>
+            <div class="grid gap-12">
+              <!-- Langages -->
+              <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center">Langages</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                    <div class="overlay">
+                      <span>JavaScript</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                    <div class="overlay">
+                      <span>Python</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                    <div class="overlay">
+                      <span>PHP</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/golang/golang-original.svg" alt="Golang" />
+                    <div class="overlay">
+                      <span>Golang</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Frameworks et Technologies -->
+              <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center">Frameworks et Technologies</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                    <div class="overlay">
+                      <span>React</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
+                    <div class="overlay">
+                      <span>Vue.js</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                    <div class="overlay">
+                      <span>Node.js</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
+                    <div class="overlay">
+                      <span>Firebase</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Outils et Environnements -->
+              <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center">Outils et Environnements</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                    <div class="overlay">
+                      <span>Docker</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+                    <div class="overlay">
+                      <span>Linux</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                    <div class="overlay">
+                      <span>Git</span>
+                    </div>
+                  </div>
+                  <div class="skill-badge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                    <div class="overlay">
+                      <span>GitHub</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
       </main>
     </div>
 
     <script src="./src/js/script.js"></script>
-
   </body>
 </html>

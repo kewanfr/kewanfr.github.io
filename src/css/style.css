@@ -98,3 +98,68 @@ a.group:hover span.bg-secondary {
   opacity: 1; /* Fait apparaître la description */
   transform: translateY(0); /* Fluide */
 }
+
+
+#skills {
+  /* background: #f9f9f9; Fond clair */
+  padding: 2rem 0;
+}
+/* Badges */
+.skill-badge {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 80px; /* Taille réduite pour des badges compacts */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-badge img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-badge:hover img {
+  transform: scale(1.1); /* Zoom léger */
+  filter: brightness(60%); /* Assombrissement */
+}
+
+.skill-badge .overlay {
+  position: absolute;
+  inset: 0; /* Remplit le badge */
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-badge:hover .overlay {
+  opacity: 1; /* Apparition au survol */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
