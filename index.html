@@ -544,8 +544,123 @@
             </div>
           </div>
         </section>
-        
-        
+
+        <section id="contact" class="w-full py-12 md:py-24 lg:py-32 scroll-mt-14">
+          <div class="px-4 md:px-6">
+            <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+              Me Contacter
+            </h2>
+
+            <div class="flex flex-col items-center space-y-6">
+              <p class="text-lg text-muted-backgroud text-center">
+                Retrouvez-moi facilement sur les plateformes suivantes :
+              </p>
+
+              <!-- Icônes de contact -->
+              <div class="grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+                <!-- Email -->
+                <a
+                  href="mailto:contact@kewan.fr"
+                  class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
+                  title="Email"
+                >
+                  <i class="fas fa-envelope text-primary text-[4rem] mb-2 transition"></i>
+                  <span class="text-base font-medium text-foreground">Email</span>
+                  <span class="text-sm text-muted-backgroud">contact@kewan.fr</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a
+                  href="https://linkedin.com/in/kéwan-bernier-68a901177"
+                  target="_blank"
+                  class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin text-primary text-[4rem] mb-2 transition"></i>
+                  <span class="text-base font-medium text-foreground">LinkedIn</span>
+                  <span class="text-sm text-muted-backgroud">Kéwan Bernier</span>
+                </a>
+
+                <!-- GitHub -->
+                <a
+                  href="https://github.com/kewanfr"
+                  target="_blank"
+                  class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github text-primary text-[4rem] mb-2 transition"></i>
+                  <span class="text-base font-medium text-foreground">GitHub</span>
+                  <span class="text-sm text-muted-backgroud">@kewanfr</span>
+                </a>
+
+                <!-- Instagram -->
+                <a
+                  href="https://instagram.com/kewanb_"
+                  target="_blank"
+                  class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram text-primary text-[4rem] mb-2 transition"></i>
+                  <span class="text-base font-medium text-foreground">Instagram</span>
+                  <span class="text-sm text-muted-backgroud">@kewanb_</span>
+                </a>
+
+
+              </div>
+            </div>
+
+              
+            <!-- Formulaire de contact -->
+            <div class="mt-12">
+              <h3 class="text-2xl font-semibold mb-6 text-primary">Contactez-moi</h3>
+              <form
+                action="https://formspree.io/f/mnqoqzqz"
+                method="POST"
+                class="grid gap-6 grid-cols-1 sm:grid-cols-2"
+              >
+                <div>
+                  <label for="name" class="text-muted-backgroud">Nom</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="w-full p-3 rounded-lg bg-background border border-muted-backgroud text-muted-backgroud"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email" class="text-muted-backgroud">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="w-full p-3 rounded-lg bg-background border border-muted-backgroud text-muted-backgroud"
+                    required
+                  />
+                </div>
+                <div class="col-span-2">
+                  <label for="message" class="text-muted-backgroud">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="w-full p-3 rounded-lg bg-background border border-muted-backgroud text-muted-backgroud"
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-span-2">
+                  <button
+                    type="submit"
+                    class="w-full p-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary-700 transition-colors"
+                  >
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+          
+          </div>
+        </section>
+
 
       </main>
     </div>
