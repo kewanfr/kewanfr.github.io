@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="./src/output.css" />
 
     <link href="./src/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <script src="./src/vendor/aos/aos.js"></script>
   </head>
   <body>
-    <script>
-      AOS.init();
-    </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
     <div class="min-h-screen bg-background text-foreground overflow-hidden">
       <!-- class="h-14 flex items-center sticky top-0 z-10 p-4 justify-between bg-background shadow-md" -->
       <header
@@ -89,15 +85,15 @@
           </a>
           <a
             class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
-            href="#blog"
-          >
-            Blog
-          </a>
-          <a
-            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
             href="#cv"
           >
             CV
+          </a>
+          <a
+            class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+            href="#blog"
+          >
+            Blog
           </a>
           <a
             class="text-lg font-medium mr-4 relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
@@ -204,20 +200,22 @@
                     Kéwan Bernier
                   </h1>
                   <h3 class="text-2xl text-muted-backgroud">
-                    Étudiant & Développeur full-stack
+                    Étudiant Futur Développeur full-stack
                   </h3>
                   <br />
                   <p class="max-w-[600px] text-muted-backgroud md:text-xl">
                     Actuellement étudiant en BUT informatique à l'IUT de
                     Nantes, j'ai toujours été passionné par l'informatique et
                     l'électronique depuis petit. <br /><br />
-                    
-                    Mais j'ai commencé à apprendre la programmation et
+
+                    J'ai commencé à apprendre la programmation et
                     l'électronique il y a près de 8 ans, en apprenant l'Arduino
                     en 2016. <br /><br />
 
                     Depuis lors, je n'ai jamais arrêté d'apprendre et
-                    j'apprécie découvrir de nouvelles technologies. <br />
+                    j'apprécie découvrir de nouvelles technologies. <br /> <br />
+
+                    Après mon BUT, je souhaiterais m'orienter vers une école d'ingénieur en informatique.
                   </p>
                 </div>
                 <div class="flex flex-col gap-2 min-[400px]:flex-row">
@@ -289,6 +287,21 @@
               class="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
             >
               <!-- Les cartes seront injectées ici -->
+              <!-- <a href="${project.link}" class="project-card">
+                <img src="${project.image}" alt="${project.title}" />
+                <div class="content">
+                  <-- Infos visibles -
+                  <div class="info">
+                    <h3>${project.title}</h3>
+                    <p class="date">${project.date}</p>
+                    <div class="tags">
+                      ${project.technologies.map((tech) => `<span>${tech}</span>`).join("")}
+                    </div>
+                  </div>
+                  -- Description au survol -
+                  <div class="description">${project.description}</div>
+                </div>
+              </a> -->
             </div>
             <div class="mt-8 text-center">
               <button
@@ -301,36 +314,55 @@
           </div>
         </section>
 
-        <section id="skills" class=" w-full  py-12 md:py-24 lg:py-32 mt-10 animate-fadeIn scroll-mt-14">
+        <section
+          id="skills"
+          class="w-full py-12 md:py-24 lg:py-32 mt-10 animate-fadeIn scroll-mt-14"
+        >
           <div class="px-4 md:px-6">
-            <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            <h2
+              class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center"
+            >
               Mes compétences
             </h2>
             <div class="grid gap-12">
               <!-- Langages -->
               <div>
-                <h3 class="text-2xl font-semibold mb-4 text-center">Langages</h3>
+                <h3 class="text-2xl font-semibold mb-4 text-center">
+                  Langages
+                </h3>
                 <div class="flex flex-wrap justify-center gap-4">
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      alt="JavaScript"
+                    />
                     <div class="overlay">
                       <span>JavaScript</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                      alt="Python"
+                    />
                     <div class="overlay">
                       <span>Python</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                      alt="PHP"
+                    />
                     <div class="overlay">
                       <span>PHP</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/golang/golang-original.svg" alt="Golang" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/golang/golang-original.svg"
+                      alt="Golang"
+                    />
                     <div class="overlay">
                       <span>Golang</span>
                     </div>
@@ -339,28 +371,42 @@
               </div>
               <!-- Frameworks et Technologies -->
               <div>
-                <h3 class="text-2xl font-semibold mb-4 text-center">Frameworks et Technologies</h3>
+                <h3 class="text-2xl font-semibold mb-4 text-center">
+                  Frameworks et Technologies
+                </h3>
                 <div class="flex flex-wrap justify-center gap-4">
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      alt="React"
+                    />
                     <div class="overlay">
                       <span>React</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                      alt="Vue.js"
+                    />
                     <div class="overlay">
                       <span>Vue.js</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                      alt="Node.js"
+                    />
                     <div class="overlay">
                       <span>Node.js</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                      alt="Firebase"
+                    />
                     <div class="overlay">
                       <span>Firebase</span>
                     </div>
@@ -369,28 +415,42 @@
               </div>
               <!-- Outils et Environnements -->
               <div>
-                <h3 class="text-2xl font-semibold mb-4 text-center">Outils et Environnements</h3>
+                <h3 class="text-2xl font-semibold mb-4 text-center">
+                  Outils et Environnements
+                </h3>
                 <div class="flex flex-wrap justify-center gap-4">
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                      alt="Docker"
+                    />
                     <div class="overlay">
                       <span>Docker</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                      alt="Linux"
+                    />
                     <div class="overlay">
                       <span>Linux</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                      alt="Git"
+                    />
                     <div class="overlay">
                       <span>Git</span>
                     </div>
                   </div>
                   <div class="skill-badge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                      alt="GitHub"
+                    />
                     <div class="overlay">
                       <span>GitHub</span>
                     </div>
@@ -403,68 +463,110 @@
 
         <section id="cv" class="w-full py-12 md:py-24 lg:py-32 scroll-mt-14">
           <div class="px-4 md:px-6">
-            <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            <h2
+              class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center"
+            >
               Curriculum Vitae
             </h2>
-        
+
             <!-- Catégorie École -->
             <div class="mb-12">
-              <h3 class="text-2xl font-semibold mb-6 text-primary">🎓 Formation</h3>
+              <h3 class="text-2xl font-semibold mb-6 text-primary">
+                🎓 Formation
+              </h3>
               <div class="relative border-l border-muted-backgroud">
                 <div class="mb-10 ml-6">
-                  <div class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-muted-backgroud">
+                  <div
+                    class="absolute -left-3 w-6 h-6 bg-primary rounded-full"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-normal leading-none text-muted-backgroud"
+                  >
                     Septembre 2024 - Aujourd'hui
                   </time>
-                  <h4 class="text-lg font-semibold text-foreground">BUT Informatique</h4>
-                  <p class="text-muted-backgroud">Université de Nantes, IUT Joffre</p>
+                  <h4 class="text-lg font-semibold text-foreground">
+                    BUT Informatique
+                  </h4>
+                  <p class="text-muted-backgroud">
+                    Université de Nantes, IUT Joffre
+                  </p>
                 </div>
                 <div class="mb-10 ml-6">
-                  <div class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-muted-backgroud">
+                  <div
+                    class="absolute -left-3 w-6 h-6 bg-primary rounded-full"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-normal leading-none text-muted-backgroud"
+                  >
                     2021 - 2024
                   </time>
-                  <h4 class="text-lg font-semibold text-foreground">Bac Général Maths/NSI - Mention Très Bien</h4>
-                  <p class="text-muted-backgroud">Lycée Léonard de Vinci, Montaigu-Vendée</p>
+                  <h4 class="text-lg font-semibold text-foreground">
+                    Bac Général Maths/NSI - Mention Très Bien
+                  </h4>
+                  <p class="text-muted-backgroud">
+                    Lycée Léonard de Vinci, Montaigu-Vendée
+                  </p>
                 </div>
               </div>
             </div>
-        
+
             <!-- Catégorie Expériences Professionnelles -->
             <div class="mb-12">
-              <h3 class="text-2xl font-semibold mb-6 text-primary">💼 Expériences professionnelles</h3>
+              <h3 class="text-2xl font-semibold mb-6 text-primary">
+                💼 Expériences professionnelles
+              </h3>
               <div class="relative border-l border-muted-backgroud">
                 <div class="mb-10 ml-6">
-                  <div class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-muted-backgroud">
+                  <div
+                    class="absolute -left-3 w-6 h-6 bg-primary rounded-full"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-normal leading-none text-muted-backgroud"
+                  >
                     Juin 2022
                   </time>
-                  <h4 class="text-lg font-semibold text-foreground">Stage de Seconde - GIE Kereis, Saint-Herblain</h4>
+                  <h4 class="text-lg font-semibold text-foreground">
+                    Stage de Seconde - GIE Kereis, Saint-Herblain
+                  </h4>
                   <p class="text-muted-backgroud">
-                    Découverte de l'équipe self care (espace assuré), observation de l'équipe backend (Java SpringBoot) et frontend (React) <br/><br/>
-                    Réalisation d'un ticket (modification du frontend) et découverte de l'intégration et du déploiement.
+                    Découverte de l'équipe self care (espace assuré),
+                    observation de l'équipe backend (Java SpringBoot) et
+                    frontend (React) <br /><br />
+                    Réalisation d'un ticket (modification du frontend) et
+                    découverte de l'intégration et du déploiement.
                   </p>
                 </div>
 
                 <div class="mb-10 ml-6">
-                  <div class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-muted-backgroud">
+                  <div
+                    class="absolute -left-3 w-6 h-6 bg-primary rounded-full"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-normal leading-none text-muted-backgroud"
+                  >
                     Janvier 2021 et Juin 2022
                   </time>
-                  <h4 class="text-lg font-semibold text-foreground">Stages en 3ème et en Première - U Tech (U GIE Iris), Carquefou</h4>
+                  <h4 class="text-lg font-semibold text-foreground">
+                    Stages en 3ème et en Première - U Tech (U GIE Iris),
+                    Carquefou
+                  </h4>
                   <p class="text-muted-backgroud">
-                    Entretiens avec chaque panel de métiers de l'entreprise: Développement application/site, assistance, informatique des entrepôts, réseau, etc... <br/><br/>
-                    Ces stages enrichissants m'ont permis des découvrir les métiers de l'informatique, ainsi que les méthodes de gestion de projets, notamment la méthode Agile.
+                    Entretiens avec chaque panel de métiers de l'entreprise:
+                    Développement application/site, assistance, informatique
+                    des entrepôts, réseau, etc... <br /><br />
+                    Ces stages enrichissants m'ont permis des découvrir les
+                    métiers de l'informatique, ainsi que les méthodes de
+                    gestion de projets, notamment la méthode Agile.
                   </p>
                 </div>
               </div>
             </div>
-        
+
             <!-- Lien pour Télécharger -->
             <div class="mt-12 text-center">
               <a
                 href="./src/files/cv_kewan.pdf"
-                
+                target="_blank"
                 class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors relative overflow-hidden group"
               >
                 <span
@@ -475,68 +577,76 @@
             </div>
           </div>
         </section>
-        
 
-        
         <section id="blog" class="w-full py-12 md:py-24 lg:py-32 scroll-mt-14">
           <div class="px-4 md:px-6">
-            <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            <h2
+              class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center"
+            >
               Articles
             </h2>
             <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               <!-- Article 1 -->
-              <div class="blog-card group relative overflow-hidden rounded-lg bg-background shadow-lg">
+              <div
+                class="blog-card group relative overflow-hidden rounded-lg bg-background shadow-lg"
+              >
                 <img
                   src="https://via.placeholder.com/300"
                   alt="Article 1"
                   class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div class="p-4">
-                  <h3 class="text-xl font-bold mb-2 text-foreground">Article 1</h3>
+                  <h3 class="text-xl font-bold mb-2 text-foreground">
+                    Article 1
+                  </h3>
                   <p class="text-sm text-muted-backgroud mb-4">
-                    Découvrez les bases de React pour démarrer vos projets front-end.
+                    Découvrez les bases de React pour démarrer vos projets
+                    front-end.
                   </p>
-                  <a
-                    href="#"
-                    class="text-primary font-medium hover:underline"
+                  <a href="#" class="text-primary font-medium hover:underline"
                     >Lire plus →</a
                   >
                 </div>
               </div>
               <!-- Article 2 -->
-              <div class="blog-card group relative overflow-hidden rounded-lg bg-background shadow-lg">
+              <div
+                class="blog-card group relative overflow-hidden rounded-lg bg-background shadow-lg"
+              >
                 <img
                   src="https://via.placeholder.com/300"
                   alt="Article 2"
                   class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div class="p-4">
-                  <h3 class="text-xl font-bold mb-2 text-foreground">Article 2</h3>
+                  <h3 class="text-xl font-bold mb-2 text-foreground">
+                    Article 2
+                  </h3>
                   <p class="text-sm text-muted-backgroud mb-4">
-                    Guide complet sur l'utilisation de Docker pour vos déploiements.
+                    Guide complet sur l'utilisation de Docker pour vos
+                    déploiements.
                   </p>
-                  <a
-                    href="#"
-                    class="text-primary font-medium hover:underline"
+                  <a href="#" class="text-primary font-medium hover:underline"
                     >Lire plus →</a
                   >
                 </div>
               </div>
               <!-- Article 3 -->
-              <div class="blog-card group relative overflow-hidden rounded-lg bg-background shadow-lg">
+              <div
+                class="blog-card group relative overflow-hidden rounded-lg bg-background shadow-lg"
+              >
                 <img
                   src="https://via.placeholder.com/300"
                   alt="Article 3"
                   class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div class="p-4">
-                  <h3 class="text-xl font-bold mb-2 text-foreground">Article 3</h3>
+                  <h3 class="text-xl font-bold mb-2 text-foreground">
+                    Article 3
+                  </h3>
                   <p class="text-sm text-muted-backgroud mb-4">
                     Apprenez les meilleures pratiques pour travailler avec Git.
                   </p>
-                  <a
-                    href="#"
-                    class="text-primary font-medium hover:underline"
+                  <a href="#" class="text-primary font-medium hover:underline"
                     >Lire plus →</a
                   >
                 </div>
@@ -663,7 +773,13 @@
 
 
       </main>
+      <footer class="bg-grey text-muted-foreground py-8 text-center">
+        <p>
+          Développé avec ❤️ par Kéwan Bernier - 2024
+        </p>
+      </footer>
     </div>
+
 
     <script src="./src/js/script.js"></script>
   </body>

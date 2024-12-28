@@ -160,4 +160,7 @@ const container = document.querySelector("#skills .grid");
 //     </div>
 //   `;
 //   container.innerHTML += badge;
-// });
+// });$
+
+
+AOS.init();

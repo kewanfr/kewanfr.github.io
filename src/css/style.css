@@ -166,3 +166,6 @@ a.group:hover span.bg-secondary {
 
 
 
+html {
+  scroll-behavior: smooth;
+}
