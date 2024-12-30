@@ -1,0 +1,72 @@
+CREATE TABLE tags (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255) NOT NULL UNIQUE,
+  email VARCHAR(255),
+  pass VARCHAR(255) NOT NULL,
+  fullName VARCHAR(255),
+  role INT DEFAULT 0,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  login_token VARCHAR(255)
+);
+
+-- role: admin, author, user
+
+CREATE TABLE posts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  content TEXT,
+  slug VARCHAR(255),
+  banner VARCHAR(255),
+  author_id INT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  status INT DEFAULT 0,
+  FOREIGN KEY (author_id) REFERENCES users(id) ON DELETE CASCADE
+);
+-- status: published, draft
+
+CREATE TABLE projets (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  description TEXT NULL,
+  page TEXT NULL,
+  date VARCHAR(255) DEFAULT YEAR(CURRENT_TIMESTAMP),
+  repo_url VARCHAR(255),
+  demo_url VARCHAR(255),
+  banner VARCHAR(255)
+);
+
+ALTER TABLE projets ADD COLUMN date VARCHAR(255) DEFAULT YEAR(CURRENT_TIMESTAMP);
+
+CREATE TABLE projet_tag (
+  tag_id INT,
+  projet_id INT,
+  PRIMARY KEY (tag_id, projet_id),
+  FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE,
+  FOREIGN KEY (projet_id) REFERENCES projets(id) ON DELETE CASCADE
+);
+
+CREATE TABLE skills_categories (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE skills (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  icon VARCHAR(255),
+  category_id INT,
+  FOREIGN KEY (category_id) REFERENCES skills_categories(id) ON DELETE CASCADE
+);
+
+CREATE TABLE contact (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  message TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+)
