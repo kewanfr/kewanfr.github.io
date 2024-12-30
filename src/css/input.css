@@ -1,0 +1,214 @@
+/* Font: Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #1A1A1D;
+    /* --background: 210 100% 97%; */
+    --foreground: 339 20% 20%;
+    --primary: 308 56% 85%;
+    --primary-foreground: 210 22% 22%;
+    --secondary: 196 75% 88%;
+    --secondary-foreground: 210 22% 22%;
+    --accent: 211 86% 70%;
+    --accent-foreground: 210 22% 22%;
+    --destructive: 0 93% 73%;
+    --destructive-foreground: 210 22% 22%;
+    --muted: 210 100% 95%;
+    --muted-foreground: 210 22% 22%;
+    --card: 210 100% 97%;
+    --card-foreground: 210 22% 22%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 341 20% 22%;
+    --border: 210 40% 80%;
+    --input: 210 40% 56%;
+    --ring: 210 40% 60%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+body {
+  font-family: "Roboto Mono", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+  
+a.group:hover span.bg-secondary {
+  transform: translateX(-100%) skewX(-12deg);
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 200px;
+  width: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project-card:hover img {
+  filter: brightness(85%); /* Assombrissement diffus */
+}
+
+/* Conteneur principal des infos */
+.project-card .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Infos visibles en permanence */
+.project-card .info {
+  z-index: 2;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card .info h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Lisibilité */
+}
+
+.project-card .info .tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.project-card .info .tags span {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+/* Description initialement masquée */
+.project-card .description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Survol de la carte */
+.project-card:hover .info {
+  transform: translateY(-20px); /* Fait monter les infos */
+}
+
+.project-card .info .date {
+  font-size: 0.85rem; /* Augmente légèrement la taille */
+  font-weight: bold; /* Met la date en gras */
+  color: rgba(255, 255, 255, 0.9); /* Texte blanc avec opacité pour contraste */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Ajoute un contour sombre pour lisibilité */
+  margin-bottom: 5px; /* Ajoute un espace sous la date */
+}
+
+.project-card:hover .description {
+  opacity: 1; /* Fait apparaître la description */
+  transform: translateY(0); /* Fluide */
+}
+
+
+#skills {
+  /* background: #f9f9f9; Fond clair */
+  padding: 2rem 0;
+}
+/* Badges */
+.skill-badge {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 80px; /* Taille réduite pour des badges compacts */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-badge img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-badge:hover img {
+  transform: scale(1.1); /* Zoom léger */
+  filter: brightness(60%); /* Assombrissement */
+}
+
+.skill-badge .overlay {
+  position: absolute;
+  inset: 0; /* Remplit le badge */
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-badge:hover .overlay {
+  opacity: 1; /* Apparition au survol */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}

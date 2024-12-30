@@ -6,3 +6,8 @@ package-lock.json
 
 old/
 todo.md
+
+.DS_Store
+.vscode/
+
+src/js/urls.js
