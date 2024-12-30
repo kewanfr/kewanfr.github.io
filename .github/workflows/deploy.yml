@@ -3,7 +3,7 @@ name: Deploy Project
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -17,9 +17,9 @@ jobs:
       - name: Push files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: './'
           server-dir: './'
@@ -29,9 +29,10 @@ jobs:
             .gitignore
             **/.vscode*
             **/.vscode*/**
-            **.src/js/urls.js
+            ./src/js/urls.js
             postcss.config.js
             tailwind.config.js
             README.md
             package.json
+            ./portfolio/src/php/db_pass.php
             
