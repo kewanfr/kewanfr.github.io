@@ -17,4 +17,31 @@ function getProjects() {
     return $projets;
 }
 
+function getSkills(){
+    global $pdo;
+    $stmtCats = $pdo->prepare("SELECT id, name from skills_categories");
+    $stmtCats->execute();
+
+    $categories = $stmtCats->fetchAll();
+
+    $stmtSkills = $pdo->prepare("SELECT s.id, s.name, s.icon, s.category_id, c.name as cat_name FROM skills s, skills_categories c WHERE s.category_id = c.id");
+    $stmtSkills->execute();
+
+    $skills = $stmtSkills->fetchAll();
+
+    $res = [];
+
+    foreach ($categories as $category) {
+        $res[$category['name']] = [];
+    }
+
+
+    foreach ($skills as $skill) {
+        $res[$skill['cat_name']][] = $skill;
+    }
+
+    return $res;
+}
+
+
 ?>
