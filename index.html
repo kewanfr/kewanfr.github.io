@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -213,9 +214,11 @@
                     en 2016. <br /><br />
 
                     Depuis lors, je n'ai jamais arrêté d'apprendre et
-                    j'apprécie découvrir de nouvelles technologies. <br /> <br />
+                    j'apprécie découvrir de nouvelles technologies. <br />
+                    <br />
 
-                    Après mon BUT, je souhaiterais m'orienter vers une école d'ingénieur en informatique.
+                    Après mon BUT, je souhaiterais m'orienter vers une école
+                    d'ingénieur en informatique.
                   </p>
                 </div>
                 <div class="flex flex-col gap-2 min-[400px]:flex-row">
@@ -324,9 +327,7 @@
             >
               Mes compétences
             </h2>
-            <div class="grid gap-12">
-              
-            </div>
+            <div class="grid gap-12"></div>
           </div>
         </section>
 
@@ -522,9 +523,14 @@
           </div>
         </section> -->
 
-        <section id="contact" class="w-full py-12 md:py-24 lg:py-32 scroll-mt-14">
+        <section
+          id="contact"
+          class="w-full py-12 md:py-24 lg:py-32 scroll-mt-14"
+        >
           <div class="px-4 md:px-6">
-            <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            <h2
+              class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center"
+            >
               Me Contacter
             </h2>
 
@@ -534,16 +540,24 @@
               </p>
 
               <!-- Icônes de contact -->
-              <div class="grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+              <div
+                class="grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+              >
                 <!-- Email -->
                 <a
                   href="mailto:contact@kewan.fr"
                   class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
                   title="Email"
                 >
-                  <i class="fas fa-envelope text-primary text-[4rem] mb-2 transition"></i>
-                  <span class="text-base font-medium text-foreground">Email</span>
-                  <span class="text-sm text-muted-backgroud">contact@kewan.fr</span>
+                  <i
+                    class="fas fa-envelope text-primary text-[4rem] mb-2 transition"
+                  ></i>
+                  <span class="text-base font-medium text-foreground"
+                    >Email</span
+                  >
+                  <span class="text-sm text-muted-backgroud"
+                    >contact@kewan.fr</span
+                  >
                 </a>
 
                 <!-- LinkedIn -->
@@ -553,9 +567,15 @@
                   class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
                   title="LinkedIn"
                 >
-                  <i class="fab fa-linkedin text-primary text-[4rem] mb-2 transition"></i>
-                  <span class="text-base font-medium text-foreground">LinkedIn</span>
-                  <span class="text-sm text-muted-backgroud">Kéwan Bernier</span>
+                  <i
+                    class="fab fa-linkedin text-primary text-[4rem] mb-2 transition"
+                  ></i>
+                  <span class="text-base font-medium text-foreground"
+                    >LinkedIn</span
+                  >
+                  <span class="text-sm text-muted-backgroud"
+                    >Kéwan Bernier</span
+                  >
                 </a>
 
                 <!-- GitHub -->
@@ -565,8 +585,12 @@
                   class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
                   title="GitHub"
                 >
-                  <i class="fab fa-github text-primary text-[4rem] mb-2 transition"></i>
-                  <span class="text-base font-medium text-foreground">GitHub</span>
+                  <i
+                    class="fab fa-github text-primary text-[4rem] mb-2 transition"
+                  ></i>
+                  <span class="text-base font-medium text-foreground"
+                    >GitHub</span
+                  >
                   <span class="text-sm text-muted-backgroud">@kewanfr</span>
                 </a>
 
@@ -577,23 +601,31 @@
                   class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
                   title="Instagram"
                 >
-                  <i class="fab fa-instagram text-primary text-[4rem] mb-2 transition"></i>
-                  <span class="text-base font-medium text-foreground">Instagram</span>
+                  <i
+                    class="fab fa-instagram text-primary text-[4rem] mb-2 transition"
+                  ></i>
+                  <span class="text-base font-medium text-foreground"
+                    >Instagram</span
+                  >
                   <span class="text-sm text-muted-backgroud">@kewanb_</span>
                 </a>
-
-
               </div>
             </div>
 
-              
+            <div id="result-div" class="mt-12 hidden bg-green-700 bg-red-700 p-4 rounded-lg">
+              <span id="result_msg" class="text-lg text-muted-backgroud"></span>
+            </div>
+
             <!-- Formulaire de contact -->
             <div class="mt-12">
-              <h3 class="text-2xl font-semibold mb-6 text-primary">Contactez-moi</h3>
+              <h3 class="text-2xl font-semibold mb-6 text-primary">
+                Contactez-moi
+              </h3>
               <form
-                action="https://kewan.fr/portfolio/contact.php"
+                action=""
                 method="POST"
                 class="grid gap-6 grid-cols-1 sm:grid-cols-2"
+                id="contact-form"
               >
                 <div>
                   <label for="name" class="text-muted-backgroud">Nom</label>
@@ -616,7 +648,9 @@
                   />
                 </div>
                 <div class="col-span-2">
-                  <label for="message" class="text-muted-backgroud">Message</label>
+                  <label for="message" class="text-muted-backgroud"
+                    >Message</label
+                  >
                   <textarea
                     name="message"
                     id="message"
@@ -634,22 +668,18 @@
                   </button>
                 </div>
               </form>
-          
+            </div>
           </div>
         </section>
-
-
       </main>
       <footer class="bg-grey text-muted-foreground py-8 text-center">
-        <p>
-          Développé avec ❤️ par Kéwan Bernier - 2024
-        </p>
+        <p>Développé avec ❤️ par Kéwan Bernier - 2024</p>
       </footer>
     </div>
-
 
     <script src="./src/js/urls.js"></script>
     <script src="./src/js/funcs.js"></script>
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/contact.js"></script>
   </body>
 </html>
