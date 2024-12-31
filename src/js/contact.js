@@ -6,14 +6,11 @@ document
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
+
 
     const result = await fetch(`https://kewan.fr/portfolio/contact.php`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
+      body: formData,
     });
 
 
