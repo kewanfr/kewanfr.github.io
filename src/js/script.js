@@ -36,6 +36,7 @@ var projects = [
     banner: './src/img/projets/portfolio.jpg',
     date: "Décembre 2024",
     tags: ["HTML/CSS/JS", "PHP", "MySQL"],
+    tags_pinned: ["Node.Js", "Discord.js"],
   },
   {
     id: 2,
@@ -48,6 +49,7 @@ var projects = [
     banner: './src/img/projets/grades.jpg',
     date: "Décembre 2024",
     tags: ["Node.Js", "Discord.js"],
+    tags_pinned: ["Node.Js", "Discord.js"],
   }
 ];
 
@@ -64,19 +66,20 @@ function displayProjects() {
   projectsContainer.innerHTML = ""; // Réinitialise le conteneur
   projects.slice(0, visibleProjects).forEach((project) => {
     const card = `
-      <a href="${project.repo_url}" target="_blank" class="project-card">
+      <a href="/projet/${project.id}" class="project-card">
+        ${project.banner ? `<img src="${project.banner}" alt="${project.name}" />` : "<img src='./src/img/projets/default.jpg' alt='default' />"}
         <img src="${project.banner}" alt="${project.name}" />
         <div class="content">
           <!-- Infos visibles -->
           <div class="info">
-            <h3>${project.name}</h3>
-            <p class="date">${project.date}</p>
+            <h3>${project.name || ""}</h3>
+            <p class="date">${project.date || ""}</p>
             <div class="tags">
-              ${project.tags.map((tech) => `<span>${tech}</span>`).join("")}
+              ${(project.tags_pinned || project.tags).map((tech) => `<span>${tech}</span>`).join("")}
             </div>
           </div>
           <!-- Description au survol -->
-          <!-- <div class="description">${project.description}</div> -->
+          <div class="description">${project.description || ""}</div>
         </div>
       </a>
     `;
