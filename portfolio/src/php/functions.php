@@ -43,5 +43,23 @@ function getSkills(){
     return $res;
 }
 
+function sendMail($name, $email, $message) {
+    ini_set( 'display_errors', 1);
+    error_reporting( E_ALL );
+    $to = "contact@kewan.fr";
+
+    $headers = array(
+        'From' => "contact@kewan.fr",
+        'Reply-To' => $email,
+        'Cc' => $email,
+        'X-Mailer' => 'PHP/' . phpversion(),
+    );
+
+    $subject = "Contact Kéwan.fr | $name";
+    $message = "Nouveau message du formulaire contact\n\nNom: $name\nEmail: $email\n\nMessage: $message";
+    mail($to,$subject,$message, $headers);
+    echo "L'email a été envoyé.";
+}
+
 
 ?>
