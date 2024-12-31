@@ -1294,6 +1294,8 @@ a.group:hover span.bg-secondary {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
