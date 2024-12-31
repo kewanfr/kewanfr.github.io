@@ -5,16 +5,29 @@ require_once 'src/php/db.php';
 
 function getProjects() {
     global $pdo;
-    $stmt = $pdo->prepare("SELECT id, name, description, page, repo_url, demo_url, banner FROM projets");
+    $stmt = $pdo->prepare("SELECT id, name, description, page, repo_url, demo_url, banner, date FROM projets");
     $stmt->execute();
 
     $projets = $stmt->fetchAll();
 
     foreach ($projets as &$projet) {
         $projet['tags'] = getProjectTags($projet['id']);
+        $projet['tags_pinned'] = getPinnedProjectTags($projet['id']);
     }
 
     return $projets;
+}
+
+function getProject($project_id){
+    global $pdo;
+    $stmt = $pdo->prepare("SELECT id, name, description, page, repo_url, demo_url, banner, date FROM projets WHERE id = ?");
+    $stmt->execute([$project_id]);
+
+    $projet = $stmt->fetch();
+
+    $projet['tags'] = getProjectTags($projet['id']);
+
+    return $projet;
 }
 
 function getSkills(){
