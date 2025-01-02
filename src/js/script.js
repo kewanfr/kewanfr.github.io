@@ -53,7 +53,7 @@ var projects = [
   }
 ];
 
-let visibleProjects = 3; // Nombre de projets visibles au début
+let visibleProjects = DEFAULT_VISIBLE_PROJECTS; // Nombre de projets visibles au début
 const projectsContainer = document.getElementById("projects-container");
 const loadMoreBtn = document.getElementById("load-more");
 
