@@ -8,7 +8,7 @@ document
     const formData = new FormData(form);
 
 
-    const result = await fetch(`https://kewan.fr/portfolio/contact.php`, {
+    const result = await fetch(CONTACT_URL, {
       method: "POST",
       body: formData,
     });

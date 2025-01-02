@@ -89,7 +89,7 @@ function displayProjects() {
 
 // Bouton "Charger plus"
 loadMoreBtn.addEventListener("click", () => {
-  visibleProjects += 3; // Affiche 3 projets supplémentaires
+  visibleProjects += NUMBER_OF_PROJECTS_TO_LOAD; // Affiche 3 projets supplémentaires
   displayProjects();
   if (visibleProjects >= projects.length) {
     loadMoreBtn.style.display = "none"; // Cache le bouton si plus de projets

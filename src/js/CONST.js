@@ -1,4 +1,5 @@
 const DEFAULT_VISIBLE_PROJECTS = 5;
+const NUMBER_OF_PROJECTS_TO_LOAD = 3;
 
 const BASE_URL = 'https://kewan.fr/portfolio';
 
