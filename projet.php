@@ -186,7 +186,7 @@ if (!isset($projet_data['id'])) {
         <a
           href="/#projets"
           class="text-primary text-xl font-medium hover:text-accent transition-colors duration-300">
-          <i class="fas fa-arrow-left mr-2"></i>
+          <i class="fas fa-arrow-left mr-2 mt-2"></i>
           Retour aux projets</a>
         <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl  text-white mt-14">
           <?= $projet_data['name'] ?>
