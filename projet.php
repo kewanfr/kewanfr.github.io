@@ -35,8 +35,25 @@ if (!isset($projet_data['id'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kéwan</title>
   <link rel="stylesheet" href="/src/css/style.css" />
+
+
+  <title>Projet <?= $projet_data['name'] ?> - Kéwan Bernier</title>
+    <meta 
+      name="description" 
+      content="Découvrez le projet <?= $projet_data['name'] ?> réalisé par Kéwan Bernier, étudiant en BUT informatique à l'IUT de Nantes. Passionné par l'informatique et l'électronique depuis petit." />
+    />
+
+    <meta property="og:title" content="Projet <?= $projet_data['name'] ?> - Kéwan Bernier" />
+    <meta property="og:description" content="Découvrez le projet <?= $projet_data['name'] ?> réalisé par Kéwan Bernier, étudiant en BUT informatique à l'IUT de Nantes. Passionné par l'informatique et l'électronique depuis petit." />
+    <meta property="og:image" content="https://kewan.fr/src/img/banner.jpg" />
+    <meta property="og:url" content="https://kewan.fr/projet.php?id=<?= $projet_data['id'] ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kéwan Bernier" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link href="/src/vendor/aos/aos.css" rel="stylesheet" />
   <!-- href="./src/vendor/fontawesome-all.min.css" -->
