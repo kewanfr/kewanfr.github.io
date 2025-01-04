@@ -679,7 +679,7 @@
         </section>
       </main>
       <footer class="bg-grey text-muted-foreground py-8 text-center">
-        <p>Développé avec ❤️ par Kéwan Bernier - 2024</p>
+        <p>Développé avec ❤️ par Kéwan Bernier - <?= date('Y') ?></p>
       </footer>
     </div>
 
