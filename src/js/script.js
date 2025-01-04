@@ -68,7 +68,7 @@ function displayProjects() {
     const card = `
       <a href="/projet/${project.id}" class="project-card">
         ${project.banner ? `<img src="${project.banner}" alt="${project.name}" />` : "<img src='./src/img/projets/default.jpg' alt='default' />"}
-        <img src="${project.banner}" alt="${project.name}" />
+        <img src="${project.banner}" alt="Image du projet ${project.name}" />
         <div class="content">
           <!-- Infos visibles -->
           <div class="info">
@@ -224,7 +224,7 @@ function displaySkills() {
 
       const imgEL = document.createElement("img");
       imgEL.src = cat_skills[i].icon;
-      imgEL.alt = cat_skills[i].name;
+      imgEL.alt = `Logo de ${cat_skills[i].name}`;
 
       const overlayEl = document.createElement("div");
       overlayEl.className = "overlay";

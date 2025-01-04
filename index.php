@@ -3,8 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kéwan</title>
+    <title>Kéwan Bernier - Étudiant Futur Développeur full-stack</title>
     <link rel="stylesheet" href="./src/css/style.css" />
+    <meta 
+      name="description" 
+      content="Kéwan Bernier, étudiant en BUT informatique à l'IUT de Nantes. Passionné par l'informatique et l'électronique depuis petit, je suis en constante recherche de nouvelles technologies."
+    />
+
+    <meta property="og:title" content="Kéwan Bernier - Étudiant Futur Développeur full-stack" />
+    <meta property="og:description" content="Kéwan Bernier, étudiant en BUT informatique à l'IUT de Nantes. Passionné par l'informatique et l'électronique depuis petit, je suis en constante recherche de nouvelles technologies." />
+    <meta property="og:image" content="https://kewan.fr/src/img/me.png" />
+    <meta property="og:url" content="https://kewan.fr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kéwan Bernier" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
 
     <link href="./src/vendor/aos/aos.css" rel="stylesheet" />
     <!-- href="./src/vendor/fontawesome-all.min.css" -->
@@ -37,6 +54,7 @@
             stroke-linejoin="round"
             class="h-6 w-6 transition-transform duration-500 transform group-hover:translate-x-[4.55rem]"
             style="margin-right: 3.75rem"
+            alt="Icon < Kéwan Bernier"
           >
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
@@ -59,6 +77,7 @@
             stroke-linejoin="round"
             class="h-6 w-6 transition-transform duration-500 transform group-hover:-translate-x-[4.75rem]"
             style="margin-left: 4.5rem"
+            alt="Icon Kéwan Bernier />"
           >
             <polyline points="7,18 12,5" />
             <polyline points="16 18 22 12 16 6"></polyline>
@@ -195,7 +214,7 @@
               src="./src/img/me.png"
               width="400"
               height="400"
-              alt="Hero"
+              alt="Photo de Kéwan Bernier, sur un bureau (extrait d'une piece de théâtre)"
               class="aspect-square mb-6 overflow-hidden w-52 rounded-xl object-cover lg:order-last"
             />
             <div
