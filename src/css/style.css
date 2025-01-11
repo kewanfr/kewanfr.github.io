@@ -723,6 +723,10 @@ h1, h2, h3, h4, h5, h6{
   margin-left: 1.5rem;
 }
 
+.ml-auto{
+  margin-left: auto;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -733,6 +737,10 @@ h1, h2, h3, h4, h5, h6{
 
 .mr-8{
   margin-right: 2rem;
+}
+
+.mr-auto{
+  margin-right: auto;
 }
 
 .mt-10{
@@ -749,6 +757,10 @@ h1, h2, h3, h4, h5, h6{
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-28{
+  margin-top: 7rem;
 }
 
 .mt-4{
@@ -827,8 +839,16 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
 }
 
+.max-w-\[25\%\]{
+  max-width: 25%;
+}
+
 .max-w-\[600px\]{
   max-width: 600px;
+}
+
+.max-w-\[90\%\]{
+  max-width: 90%;
 }
 
 .flex-1{
@@ -870,6 +890,10 @@ h1, h2, h3, h4, h5, h6{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -896,6 +920,10 @@ h1, h2, h3, h4, h5, h6{
 
 .gap-12{
   gap: 3rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
 }
 
 .gap-2{
@@ -1097,6 +1125,11 @@ h1, h2, h3, h4, h5, h6{
   line-height: 2.25rem;
 }
 
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-\[4rem\]{
   font-size: 4rem;
 }
@@ -1149,6 +1182,10 @@ h1, h2, h3, h4, h5, h6{
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
+.text-muted{
+  color: hsl(var(--muted));
 }
 
 .text-muted-foreground{
