@@ -101,11 +101,11 @@
           href="#cv">
           CV
         </a>
-        <a
+        <!-- <a
           class="text-lg font-medium relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
           href="#blog">
           Blog
-        </a>
+        </a> -->
         <a
           class="text-lg font-medium mr-4 relative after:bg-white after:absolute after:h-[1] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
           href="#contact">
