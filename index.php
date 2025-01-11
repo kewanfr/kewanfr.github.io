@@ -626,7 +626,7 @@
             <form
               action=""
               method="POST"
-              class="grid gap-6 grid-cols-1 sm:grid-cols-2"
+              class="grid gap-6 grid-cols-2 sm:grid-cols-2"
               id="contact-form">
               <div>
                 <label for="name" class="text-muted-backgroud">Nom</label>
