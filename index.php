@@ -274,7 +274,7 @@
         class="w-full py-12 md:py-24 lg:py-32 align-middle pr-0"
         id="projets">
         <div class="px-4 md:px-6">
-          <h2 class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8">
+          <h2 class="text-3xl font-bold sm:text-4xl xl:text-4xl mb-8">
             Mes projets
           </h2>
           <div
@@ -312,7 +312,7 @@
         class="w-full py-12 md:py-24 lg:py-32 mt-10 animate-fadeIn scroll-mt-14">
         <div class="px-4 md:px-6 ">
           <h2
-            class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            class="text-3xl font-bold sm:text-4xl xl:text-4xl mb-8 text-center">
             Mes compétences Techniques
           </h2>
           <div class="grid gap-12"></div>
@@ -320,7 +320,7 @@
 
         <div class="px-4 md:px-6 mt-28">
           <h2
-            class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            class="text-3xl font-bold sm:text-4xl xl:text-4xl mb-8 text-center">
             Mes compétences Générales
           </h2>
           <div class=" gap-12 items-center max-w-[90%] ml-auto mr-auto">
@@ -370,7 +370,7 @@
       <section id="cv" class="w-full py-12 md:py-24 lg:py-32 scroll-mt-14">
         <div class="px-4 md:px-6">
           <h2
-            class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            class="text-3xl font-bold sm:text-4xl xl:text-4xl mb-8 text-center">
             Curriculum Vitae
           </h2>
 
@@ -553,7 +553,7 @@
         class="w-full py-12 md:py-24 lg:py-32 scroll-mt-14">
         <div class="px-4 md:px-6">
           <h2
-            class="text-3xl font-bold sm:text-5xl xl:text-6xl mb-8 text-center">
+            class="text-3xl font-bold sm:text-4xl xl:text-4xl mb-8 text-center">
             Me Contacter
           </h2>
 
