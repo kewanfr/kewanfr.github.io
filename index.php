@@ -587,7 +587,7 @@
 
                 <!-- LinkedIn -->
                 <a
-                  href="https://linkedin.com/in/kéwan-bernier-68a901177"
+                  href="https://www.linkedin.com/in/kewan-bernier-68a901177/"
                   target="_blank"
                   class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
                   title="LinkedIn"
