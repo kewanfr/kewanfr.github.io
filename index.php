@@ -29,6 +29,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     rel="stylesheet" />
   <script src="./src/vendor/aos/aos.js"></script>
+  <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico" />
 </head>
 
 <body>
