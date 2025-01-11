@@ -42,7 +42,7 @@ if (!isset($projet_data['id'])) {
     <meta 
       name="description" 
       content="Découvrez le projet <?= $projet_data['name'] ?> réalisé par Kéwan Bernier, étudiant en BUT informatique à l'IUT de Nantes. Passionné par l'informatique et l'électronique depuis petit." />
-    />
+    
 
     <meta property="og:title" content="Projet <?= $projet_data['name'] ?> - Kéwan Bernier" />
     <meta property="og:description" content="Découvrez le projet <?= $projet_data['name'] ?> réalisé par Kéwan Bernier, étudiant en BUT informatique à l'IUT de Nantes. Passionné par l'informatique et l'électronique depuis petit." />
