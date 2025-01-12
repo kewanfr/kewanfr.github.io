@@ -843,12 +843,20 @@ h1, h2, h3, h4, h5, h6{
   max-width: 25%;
 }
 
+.max-w-\[30\%\]{
+  max-width: 30%;
+}
+
 .max-w-\[600px\]{
   max-width: 600px;
 }
 
 .max-w-\[90\%\]{
   max-width: 90%;
+}
+
+.max-w-\[60\%\]{
+  max-width: 60%;
 }
 
 .flex-1{
@@ -1618,14 +1626,14 @@ html {
     gap: 1.5rem;
   }
 
-  .sm\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .sm\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -1694,6 +1702,11 @@ html {
     grid-template-columns: 2fr 500px;
   }
 
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -1702,10 +1715,5 @@ html {
   .xl\:text-6xl\/none{
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .xl\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }

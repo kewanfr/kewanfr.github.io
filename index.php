@@ -143,13 +143,6 @@
       </button>
     </header>
 
-    <!-- <nav id="mobile-nav" class="hidden md:hidden flex-col gap-4 p-4 bg-primary text-primary-foreground">
-        <a href="#about" class="text-lg font-medium">À propos</a>
-        <a href="#projets" class="text-lg font-medium">Projets</a>
-        <a href="#skills" class="text-lg font-medium">Compétences</a>
-        <a href="#CV" class="text-lg font-medium">CV</a>
-      </nav> -->
-
     <div
       id="mobile-nav"
       class="fixed inset-0 z-40 bg-background/95 backdrop-blur-sm flex items-center justify-center hidden">
@@ -182,8 +175,6 @@
         class="min-h-[100vh] w-full py-12 md:py-24 lg:py-32 align-middle pr-0"
         id="about">
         <div class="px-4 md:px-6">
-          <!-- src="./src/img/placeholder.svg" -->
-          <!-- src="./src/img/placeholder.svg" -->
           <img
             src="./src/img/me.png"
             width="400"
@@ -277,25 +268,17 @@
           <h2 class="text-3xl font-bold sm:text-4xl xl:text-4xl mb-8">
             Mes projets
           </h2>
+            <p class="text-muted-backgroud max-w-[60%]">
+              Voici quelques-uns des projets que j'ai réalisé,
+              durant mes études ou en dehors. <br /><br />
+              Il en manque énormément, parce qu'ils ne sont pas
+              terminés, soit parce que je n'ai pas encore eu le temps de les
+              publier ou ait perdu le code source. <br /><br />
+            </p>
           <div
             id="projects-container"
             class="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
             <!-- Les cartes seront injectées ici -->
-            <!-- <a href="${project.link}" class="project-card">
-                <img src="${project.image}" alt="${project.title}" />
-                <div class="content">
-                  <-- Infos visibles -
-                  <div class="info">
-                    <h3>${project.title}</h3>
-                    <p class="date">${project.date}</p>
-                    <div class="tags">
-                      ${project.technologies.map((tech) => `<span>${tech}</span>`).join("")}
-                    </div>
-                  </div>
-                  -- Description au survol -
-                  <div class="description">${project.description}</div>
-                </div>
-              </a> -->
           </div>
           <div class="mt-8 text-center">
             <button
