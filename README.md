@@ -1,5 +1,7 @@
 # (https://www.kewan.fr)[https://www.kewan.fr]
 
+![Exemple du site](./src/img/projets/site.jpg)
+
 Ce projet est mon site / portfolio personnel. J'y partage ma présentation, mes compétences, mon CV ainsi que mes projets personnels.
 Je l'ai entièrement développé en HTML / CSS / JS, avec du Tailwind CSS pour faciliter le CSS, ainsi que du PHP pour les informations et le formulaire de contact.
 
