@@ -75,7 +75,7 @@ a.group:hover span.bg-secondary {
 }
 
 .project-card:hover img {
-  filter: brightness(85%); /* Assombrissement diffus */
+  filter: brightness(55%); /* Assombrissement diffus */
 }
 
 /* Conteneur principal des infos */
