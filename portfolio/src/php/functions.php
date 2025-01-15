@@ -38,7 +38,7 @@ function getPinnedProjectTags($project_id) {
 
 function getProjects() {
     global $pdo;
-    $stmt = $pdo->prepare("SELECT id, name, description, page, repo_url, demo_url, banner, date FROM projets ORDER BY order ASC");
+    $stmt = $pdo->prepare("SELECT id, name, description, page, repo_url, demo_url, banner, date FROM projets ORDER BY ordre ASC");
     $stmt->execute();
 
     $projets = $stmt->fetchAll();
