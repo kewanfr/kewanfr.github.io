@@ -274,7 +274,7 @@
               durant mes études ou en dehors. <br /><br />
               Il en manque énormément, soit parce qu'ils ne sont pas
               terminés, soit parce que je n'ai pas encore eu le temps de les
-              publier ou ait perdu le code source. <br /><br />
+              publier ou ai perdu le code source. <br /><br />
             </p>
           <div
             id="projects-container"
