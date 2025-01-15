@@ -843,8 +843,8 @@ h1, h2, h3, h4, h5, h6{
   max-width: 25%;
 }
 
-.max-w-\[30\%\]{
-  max-width: 30%;
+.max-w-\[60\%\]{
+  max-width: 60%;
 }
 
 .max-w-\[600px\]{
@@ -853,10 +853,6 @@ h1, h2, h3, h4, h5, h6{
 
 .max-w-\[90\%\]{
   max-width: 90%;
-}
-
-.max-w-\[60\%\]{
-  max-width: 60%;
 }
 
 .flex-1{
@@ -1345,7 +1341,7 @@ a.group:hover span.bg-secondary {
 }
 
 .project-card:hover img {
-  filter: brightness(85%);
+  filter: brightness(55%);
   /* Assombrissement diffus */
 }
 
