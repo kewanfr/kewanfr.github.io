@@ -233,10 +233,10 @@
               <div class="flex flex-col gap-4 mr-8">
                 <div class="flex flex-col gap-4">
                   <ul class="list-item pl-5 space-y-2">
-                    <li>
+                    <!-- <li>
                       <span class="font-semibold underline">🎂</span> - 17
                       ans
-                    </li>
+                    </li> -->
 
                     <li><span class="font-semibold">📍</span> - Nantes</li>
 
@@ -254,6 +254,7 @@
                       <span class="font-semibold">🚀</span> - 8 ans
                       d'expérience en programmation et en informatique
                     </li>
+
                   </ul>
                 </div>
               </div>
