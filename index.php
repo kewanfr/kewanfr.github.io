@@ -269,9 +269,9 @@
             Mes projets
           </h2>
             <p class="text-muted-backgroud max-w-[60%]">
-              Voici quelques-uns des projets que j'ai réalisé,
+              Voici quelques-uns des projets que j'ai réalisés 
               durant mes études ou en dehors. <br /><br />
-              Il en manque énormément, parce qu'ils ne sont pas
+              Il en manque énormément, soit parce qu'ils ne sont pas
               terminés, soit parce que je n'ai pas encore eu le temps de les
               publier ou ait perdu le code source. <br /><br />
             </p>
