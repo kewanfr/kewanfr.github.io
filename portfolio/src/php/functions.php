@@ -36,6 +36,39 @@ function getPinnedProjectTags($project_id) {
     }, $tags);
 }
 
+function insertVisit($path, $IP, $country, $browser, $deviceBrand, $deviceModel, $os){
+
+
+    global $pdo;
+    $stmt = $pdo->prepare("INSERT INTO access (path, IP, country, browser, deviceBrand, deviceModel, os) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->execute([$path, $IP, $country, $browser, $deviceBrand, $deviceModel, $os]);
+
+    incrementStat('visits');
+
+    return $pdo->lastInsertId();
+
+}
+
+function getVisits() {
+    global $pdo;
+    $stmt = $pdo->prepare("SELECT * FROM access");
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
+function getStat($name){
+    global $pdo;
+    $stmt = $pdo->prepare("SELECT value FROM stats WHERE name = ?");
+    $stmt->execute([$name]);
+    return $stmt->fetch()['value'];
+}
+
+function incrementStat($name){
+    global $pdo;
+    $stmt = $pdo->prepare("UPDATE stats SET value = value + 1 WHERE name = ?");
+    $stmt->execute([$name]);
+}
+
 function getProjects() {
     global $pdo;
     $stmt = $pdo->prepare("SELECT id, name, description, page, repo_url, demo_url, banner, date FROM projets ORDER BY ordre ASC");
