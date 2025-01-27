@@ -22,11 +22,12 @@ if ($projet_data === null) {
   $projet_data = json_decode($projet_call, true);
 }
 
+require_once 'portfolio/visit.php';
+
 if (!isset($projet_data['id'])) {
   header('Location: /#projets');
   exit();
 }
-
 ?>
 
 <!DOCTYPE html>
