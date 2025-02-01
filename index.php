@@ -1,5 +1,5 @@
 <?php
-require_once 'portfolio/visit.php';
+// require_once 'portfolio/visit.php';
 ?>
 
 <!DOCTYPE html>
