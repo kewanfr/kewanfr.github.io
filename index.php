@@ -237,10 +237,10 @@
               <div class="flex flex-col gap-4 mr-8">
                 <div class="flex flex-col gap-4">
                   <ul class="list-item pl-5 space-y-2">
-                    <!-- <li>
-                      <span class="font-semibold underline">🎂</span> - 17
+                    <li>
+                      <span class="font-semibold underline">🎂</span> - 18
                       ans
-                    </li> -->
+                    </li>
 
                     <li><span class="font-semibold">📍</span> - Nantes</li>
 
