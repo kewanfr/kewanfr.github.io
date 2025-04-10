@@ -250,6 +250,15 @@
                     </li>
 
                     <li>
+                      <!-- En alternance -->
+                      <span class="font-semibold">💼</span> - En Alternance chez U Tech à la rentrée 2025
+                    </li>
+
+                    <li>
+                      <span class="font-semibold">📚</span> - Je souhaiterais faire une école d'ingenieur par la suite
+                    </li>
+
+                    <li>
                       <span class="font-semibold">💻</span> - Passionné par
                       l'informatique et l'électronique depuis petit
                     </li>
