@@ -273,13 +273,13 @@
           <h2 class="text-3xl font-bold sm:text-4xl xl:text-4xl mb-8">
             Mes projets
           </h2>
-            <p class="text-muted-backgroud max-w-[60%]">
-              Voici quelques-uns des projets que j'ai réalisés 
-              durant mes études ou en dehors. <br /><br />
-              Il en manque énormément, soit parce qu'ils ne sont pas
-              terminés, soit parce que je n'ai pas encore eu le temps de les
-              publier ou ai perdu le code source. <br /><br />
-            </p>
+          <p class="text-muted-backgroud max-w-[60%]">
+            Voici quelques-uns des projets que j'ai réalisés
+            durant mes études ou en dehors. <br /><br />
+            Il en manque énormément, soit parce qu'ils ne sont pas
+            terminés, soit parce que je n'ai pas encore eu le temps de les
+            publier ou ai perdu le code source. <br /><br />
+          </p>
           <div
             id="projects-container"
             class="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
@@ -405,6 +405,25 @@
               💼 Expériences professionnelles
             </h3>
             <div class="relative border-l border-muted-backgroud">
+              <div class="mb-10 ml-6">
+                <div
+                  class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
+                <time
+                  class="mb-1 text-sm font-normal leading-none text-muted-backgroud">
+                  Septembre 2025 - Aout 2026
+                </time>
+                <h4 class="text-lg font-semibold text-foreground">
+                  Alternance Développeur Java/Kotlin - U Tech (U GIE Iris),
+                  Carquefou
+                </h4>
+                <p class="text-muted-backgroud">
+                  Dès la rentrée 2025, je vais intégrer l'équipe de développement
+                  de l'application mobile interne aux magasins U, en tant que
+                  développeur Java/Kotlin. <br /><br />
+                  Je vais travailler en Alternance, en parallèle de mon cursus de BUT informatique à l'IUT de Nantes.
+                </p>
+              </div>
+
               <div class="mb-10 ml-6">
                 <div
                   class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
@@ -546,6 +565,13 @@
           </h2>
 
           <div class="flex flex-col items-center space-y-6">
+            <p class="text-lg text-muted-backgroud text-center">
+              Mon CV ou mes expériences vous intéressent ? <br />
+              Vous souhaitez discuter d'un projet ? <br />
+              Ou vous souhaitez simplement échanger sur un sujet qui vous tient à cœur ? <br /><br />
+              Je suis toujours ouvert à de nouvelles opportunités et à des
+              discussions enrichissantes. <br /><br />
+            </p>
             <p class="text-lg text-muted-backgroud text-center">
               Retrouvez-moi facilement sur les plateformes suivantes :
             </p>
