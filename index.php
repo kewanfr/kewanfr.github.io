@@ -244,10 +244,7 @@
 
                     <li><span class="font-semibold">📍</span> - Nantes</li>
 
-                    <li>
-                      <span class="font-semibold">🎓</span> - BUT
-                      informatique à l'IUT de Nantes
-                    </li>
+                    <br />
 
                     <li>
                       <!-- En alternance -->
@@ -255,8 +252,15 @@
                     </li>
 
                     <li>
+                      <span class="font-semibold">🎓</span> - BUT
+                      informatique à l'IUT de Nantes
+                    </li>
+
+                    <li>
                       <span class="font-semibold">📚</span> - Je souhaiterais faire une école d'ingenieur par la suite
                     </li>
+
+                    <br />
 
                     <li>
                       <span class="font-semibold">💻</span> - Passionné par
