@@ -1,0 +1,11 @@
+
+services:
+  web:
+    image: webdevops/php-apache:8.2
+    container_name: portfolio
+    ports:
+      - "7188:80"            # Accès au site sur http://localhost:7188
+    volumes:
+      - ./:/app  # Pour live‑reload de votre code en développement
+    environment:
+      - WEB_DOCUMENT_ROOT=/app
