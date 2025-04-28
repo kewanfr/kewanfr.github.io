@@ -317,6 +317,25 @@
             Mes compétences Techniques
           </h2>
           <div class="grid gap-12"></div>
+          <!-- <div class="mt-12 items-center justify-center max-w-[80%] ml-auto mr-auto">
+            <h3 class="text-2xl font-semibold mb-6 text-primary">Mes langages de programmation</h3>
+            <p class="text-muted-backgroud">
+
+              Je maîtrise plusieurs langages de programmation et technologies, notamment PHP, JavaScript (ainsi que HTML/CSS et TypeScript), Golang, Java/Kotlin et Python,
+              que j'ai utilisés dans divers projets personnels et académiques. <br /><br />
+              Mon expérience inclut le développement de sites web dynamiques, la création d'API RESTful,
+              et l'intégration de bases de données relationnelles comme MySQL, MongoDB, PostgreSQL. <br /><br />
+              J'ai également une bonne compréhension des concepts de programmation orientée objet,
+              des frameworks web React, Vue.Js, Nuxt et non web tels que Discord.Js.<br /><br />
+              J'ai aussi mis en place un homelab, acquérant une bonne maitrise des outils DevOps tels que Docker, Linux (Debian, Ubuntu, Fedora, etc.), Nginx, Traefik, et Wireguard. <br /><br />
+              Les outils de versionnement, de CI/CD et de gestion de projet tels que Git, GitHub, GitLab et Trello font également partie de mes compétences. <br /><br />
+
+
+              <-- Je maîtrise PHP, JavaScript (HTML/CSS, TypeScript), Golang, Java/Kotlin, Python, et divers frameworks (React, Vue.js, Nuxt). <br /><br />
+              Mon expérience inclut le développement web, API RESTful, bases de données (MySQL, MongoDB, PostgreSQL), et outils DevOps (Docker, Linux, Nginx). <br /><br />
+              J'utilise Git, GitHub, GitLab et Trello pour la gestion de projets et CI/CD. --
+            </p>
+          </div> -->
         </div>
 
         <div class="px-4 md:px-6 mt-28">
@@ -336,8 +355,6 @@
                 <p class="text-muted backgroud text-center">
                   J'apprécie beaucoup travailler en équipe et partager mes idées avec les autres. <br /><br />
                   Les nombreux projets que j'ai réalisé en groupe, à l'école ou en dehors, ont renforcé cette compétence.
-
-
                 </p>
               </div>
               <div class="flex flex-col items-center space-y-2 max-w-[25%]">
