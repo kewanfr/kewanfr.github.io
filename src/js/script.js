@@ -108,7 +108,7 @@ function displayProjects() {
             </div>
           </div>
           <!-- Description au survol -->
-          <div class="description">${project.description || ""}</div>
+          <!--<div class="description">${project.description || ""}</div> -->
         </div>
       </a>
     `;
