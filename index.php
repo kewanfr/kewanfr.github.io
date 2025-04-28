@@ -580,8 +580,7 @@
           <div class="flex flex-col items-center space-y-6">
             <p class="text-lg text-muted-backgroud text-center">
               Mon CV ou mes expériences vous intéressent ? <br />
-              Vous souhaitez discuter d'un projet ? <br />
-              Ou vous souhaitez simplement échanger sur un sujet qui vous tient à cœur ? <br /><br />
+              Vous souhaitez discuter d'un projet ? <br /><br />
               Je suis toujours ouvert à de nouvelles opportunités et à des
               discussions enrichissantes. <br /><br />
             </p>
