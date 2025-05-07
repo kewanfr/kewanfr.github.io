@@ -687,11 +687,6 @@ h1, h2, h3, h4, h5, h6{
   margin-right: auto;
 }
 
-.mx-7{
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -856,12 +851,12 @@ h1, h2, h3, h4, h5, h6{
   max-width: 600px;
 }
 
-.max-w-\[90\%\]{
-  max-width: 90%;
-}
-
 .max-w-\[80\%\]{
   max-width: 80%;
+}
+
+.max-w-\[90\%\]{
+  max-width: 90%;
 }
 
 .flex-1{
@@ -1223,6 +1218,30 @@ h1, h2, h3, h4, h5, h6{
   text-decoration-line: underline;
 }
 
+.decoration-primary{
+  text-decoration-color: hsl(var(--primary));
+}
+
+.decoration-primary\/50{
+  text-decoration-color: hsl(var(--primary) / 0.5);
+}
+
+.decoration-2{
+  text-decoration-thickness: 2px;
+}
+
+.decoration-4{
+  text-decoration-thickness: 4px;
+}
+
+.underline-offset-4{
+  text-underline-offset: 4px;
+}
+
+.underline-offset-8{
+  text-underline-offset: 8px;
+}
+
 .opacity-100{
   opacity: 1;
 }
@@ -1529,9 +1548,19 @@ html {
   height: 1;
 }
 
+.after\:h-\[1px\]::after{
+  content: var(--tw-content);
+  height: 1px;
+}
+
 .after\:w-0::after{
   content: var(--tw-content);
   width: 0px;
+}
+
+.after\:bg-primary::after{
+  content: var(--tw-content);
+  background-color: hsl(var(--primary));
 }
 
 .after\:bg-white::after{
@@ -1548,9 +1577,23 @@ html {
 }
 
 .after\:duration-300::after{
+  content: var(--tw-content);
   transition-duration: 300ms;
+}
+
+.after\:duration-200::after{
+  content: var(--tw-content);
+  transition-duration: 200ms;
+}
+
+.after\:duration-300::after{
   content: var(--tw-content);
   animation-duration: 300ms;
+}
+
+.after\:duration-200::after{
+  content: var(--tw-content);
+  animation-duration: 200ms;
 }
 
 .hover\:scale-105:hover{
