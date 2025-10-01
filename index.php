@@ -447,12 +447,33 @@
                   Carquefou
                 </h4>
                 <p class="text-muted-backgroud">
-                  Dès la rentrée 2025, je vais intégrer l'équipe de développement
-                  de l'application mobile interne aux magasins U, en tant que
-                  développeur Java/Kotlin. <br /><br />
-                  Je vais travailler en Alternance, en parallèle de mon cursus de BUT informatique à l'IUT de Nantes.
+                  Alternant dans l'équipe MobUlis. <br />
+                  Une application mobile utilisée par les employés des magasins U pour gérer les stocks, les commandes, et d'autres opérations quotidiennes. <br /><br />
+
+                  En tant que développeur Java/Kotlin, je vais contribuer au développement et à la maintenance de cette application, en travaillant sur des fonctionnalités nouvelles et existantes. <br />
+                  Et ce pour une durée de 2 ans, en parallèle de mon cursus de BUT informatique à l'IUT de Nantes. <br /><br />
                 </p>
               </div>
+              <div class="mb-10 ml-6">
+                <div
+                  class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
+                <time
+                  class="mb-1 text-sm font-normal leading-none text-muted-backgroud">
+                  Juillet - Août 2025
+                </time>
+                <h4 class="text-lg font-semibold text-foreground">
+                  Aide Support IT & Employé Administratif - Kereis France, Saint-Herblain
+                </h4>
+                <p class="text-muted-backgroud">
+                  Intérimaire saisonnier chez Kereis France, j'ai aidé l'équipe de Support IT dans diverses tâches de support technique et d'administratif / de documentation pour l'entreprise. <br />
+                  J'ai assisté les utilisateurs finaux avec des problèmes techniques, résolu des incidents de support de niveau 1, et contribué à la documentation des procédures IT ainsi qu'au réaménagement de l'espace de travail. <br /><br />
+
+
+                  J'ai également mis à jour toute la documentation organisationnelle de la DSI de Kereis France <br /><br />
+
+                  Cette expérience m'a permis de développer mes compétences en support technique, en communication avec les utilisateurs, et en gestion de la documentation IT.
+              </div>
+
 
               <!-- <div class="mb-10 ml-6">
                 <div
