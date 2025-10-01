@@ -454,7 +454,7 @@
                 </p>
               </div>
 
-              <div class="mb-10 ml-6">
+              <!-- <div class="mb-10 ml-6">
                 <div
                   class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
                 <time
@@ -471,9 +471,9 @@
                   Réalisation d'un ticket (modification du frontend) et
                   découverte de l'intégration et du déploiement.
                 </p>
-              </div>
+              </div> -->
 
-              <div class="mb-10 ml-6">
+              <!-- <div class="mb-10 ml-6">
                 <div
                   class="absolute -left-3 w-6 h-6 bg-primary rounded-full"></div>
                 <time
@@ -492,7 +492,7 @@
                   métiers de l'informatique, ainsi que les méthodes de
                   gestion de projets, notamment la méthode Agile.
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
 
