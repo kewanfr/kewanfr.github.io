@@ -406,10 +406,14 @@
                   Septembre 2024 - Aujourd'hui
                 </time>
                 <h4 class="text-lg font-semibold text-foreground">
-                  BUT Informatique
+                  BUT Informatique - 6ème/90 de promo
                 </h4>
                 <p class="text-muted-backgroud">
-                  Université de Nantes, IUT Joffre
+                  Université de Nantes, IUT Joffre<br /><br />
+
+                  Formation Bac + 3 en Informatique, couvrant un large éventail de sujets: programmation, bases de données, réseaux, sécurité informatique, développement web / mobile, ainsi que la gestion de projets informatiques. <br /><br />
+                  Mélange d'enseignements théoriques et pratiques, avec de nombreux projets en groupe et individuels pour appliquer les connaissances acquises. <br /><br />
+                  Préparation très axée sur le monde professionnel -> stages obligatoires et la possibilité de faire une alternance. <br />
                 </p>
               </div>
               <div class="mb-10 ml-6">
@@ -423,7 +427,8 @@
                   Bac Général Maths/NSI - Mention Très Bien
                 </h4>
                 <p class="text-muted-backgroud">
-                  Lycée Léonard de Vinci, Montaigu-Vendée
+                  Lycée Léonard de Vinci, Montaigu-Vendée<br /><br />
+                  Baccalauréat Général avec spécialités en Mathématiques et Numérique et Sciences Informatiques (NSI). <br />
                 </p>
               </div>
             </div>
@@ -446,12 +451,11 @@
                   Alternance Développeur Java/Kotlin - U Tech (U GIE Iris),
                   Carquefou
                 </h4>
-                <p class="text-muted-backgroud">
-                  Alternant dans l'équipe MobUlis. <br />
-                  Une application mobile utilisée par les employés des magasins U pour gérer les stocks, les commandes, et d'autres opérations quotidiennes. <br /><br />
+                <p class="text-muted-backgroud"><br />
+                  Alternant dans l'équipe MobUlis, une application mobile utilisée par les employés des magasins U pour gérer les stocks, les commandes, et d'autres opérations quotidiennes. <br /><br />
 
                   En tant que développeur Java/Kotlin, je vais contribuer au développement et à la maintenance de cette application, en travaillant sur des fonctionnalités nouvelles et existantes. <br />
-                  Et ce pour une durée de 2 ans, en parallèle de mon cursus de BUT informatique à l'IUT de Nantes. <br /><br />
+                  Et ce pour une durée de 2 ans, en parallèle de mon cursus de BUT informatique à l'IUT de Nantes.
                 </p>
               </div>
               <div class="mb-10 ml-6">
@@ -464,7 +468,7 @@
                 <h4 class="text-lg font-semibold text-foreground">
                   Aide Support IT & Employé Administratif - Kereis France, Saint-Herblain
                 </h4>
-                <p class="text-muted-backgroud">
+                <p class="text-muted-backgroud"><br />
                   Intérimaire saisonnier chez Kereis France, j'ai aidé l'équipe de Support IT dans diverses tâches de support technique et d'administratif / de documentation pour l'entreprise. <br />
                   J'ai assisté les utilisateurs finaux avec des problèmes techniques, résolu des incidents de support de niveau 1, et contribué à la documentation des procédures IT ainsi qu'au réaménagement de l'espace de travail. <br /><br />
 
