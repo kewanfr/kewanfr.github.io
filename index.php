@@ -644,7 +644,7 @@
               </a>
 
               <!-- Instagram -->
-              <a
+              <!--<a
                 href="https://instagram.com/kewanb_"
                 target="_blank"
                 class="flex flex-col items-center justify-center p-8 rounded-lg bg-background shadow-md hover:shadow-lg transition transform hover:scale-105 group"
@@ -653,7 +653,7 @@
                   class="fab fa-instagram text-primary text-[4rem] mb-2 transition"></i>
                 <span class="text-base font-medium text-foreground">Instagram</span>
                 <span class="text-sm text-muted-backgroud">@kewanb_</span>
-              </a>
+              </a>-->
             </div>
           </div>
 
